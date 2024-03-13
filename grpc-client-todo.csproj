@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\todo_items.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

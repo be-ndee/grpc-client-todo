@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "grpc_client_todo";
+
+package todo_items;
+
+// The greeting service definition.
+service TodoItems {
+  // Sends a greeting
+  rpc GetList (ListRequest) returns (ListReply);
+}
+
+// The request message containing the user's name.
+message ListRequest {
+  bool onlyOpen = 1;
+}
+
+// The response message containing the greetings.
+message ListReply {
+  repeated string items = 1;
+}
